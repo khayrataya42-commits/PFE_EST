@@ -1,0 +1,18 @@
+.upload-file-content {
+  padding: 2rem;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+}
+
+.upload-file-title {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.upload-file-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}

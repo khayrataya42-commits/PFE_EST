@@ -1,0 +1,49 @@
+/* src/styles/AddRemoveStudent.css */
+.add-remove-student {
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.add-remove-student .form {
+  margin-bottom: 20px;
+}
+
+.add-remove-student input {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.add-remove-student button {
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.add-remove-student button:hover {
+  background-color: #218838;
+}
+
+.add-remove-student table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.add-remove-student th,
+.add-remove-student td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.add-remove-student .success {
+  color: green;
+}
+
+.add-remove-student .error {
+  color: red;
+}

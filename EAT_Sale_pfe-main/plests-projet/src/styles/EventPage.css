@@ -1,0 +1,27 @@
+/* Container principal */
+.event-page-container {
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Titre principal */
+.event-page-container h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+/* Responsive pour les petits écrans */
+@media (max-width: 768px) {
+  .event-page-container {
+    padding: 1rem;
+  }
+
+  .event-page-container h2 {
+    font-size: 1.5rem;
+  }
+}
