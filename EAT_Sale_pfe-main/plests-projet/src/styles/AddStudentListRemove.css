@@ -1,0 +1,159 @@
+/* ====== Container principal ====== */
+.add-remove-student {
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+}
+
+/* ====== Titres ====== */
+.add-remove-student h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  border-left: 4px solid #3498db;
+  padding-left: 12px;
+}
+
+/* ====== Scrollable table container ====== */
+.table-wrapper {
+  overflow-x: auto;
+  height: 180px;
+}
+
+/* ====== Table style ====== */
+table {
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 12px 14px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+td {
+  background-color: #fafafa;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Case vide */
+table td[colspan="5"] {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  background-color: #fafafa;
+}
+
+/* tr:last-child td {
+  border-bottom: none;
+} */
+
+/* ====== Select & Buttons ====== */
+select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 14px;
+  width: 100%;
+}
+button.btn-10 {
+  padding: 6px 12px !important;
+  border: 1px solid #ccc !important;
+  border-radius: 6px !important;
+  background-color: #f5f5f5 !important;
+  font-size: 14px !important;
+  color: #333 !important;
+  cursor: pointer !important;
+  transition: none !important;
+}
+
+/* Désactive tous les effets visuels au hover/focus/active */
+button.btn-10:hover,
+button.btn-10:focus,
+button.btn-10:active {
+  background-color: #f5f5f5 !important;
+  color: #333 !important;
+  border: 1px solid #ccc !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* ====== Icônes FontAwesome ====== */
+button.btn-10 .fa-plus-circle {
+  color: #27ae60;
+  margin-right: 5px;
+}
+
+button.btn-10 .fa-trash-alt {
+  color: #c0392b;
+  margin-right: 5px;
+}
+
+/* ====== Loading spinner ====== */
+.loading-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  font-size: 15px;
+  color: #2980b9;
+}
+
+.loading-message i {
+  margin-right: 6px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ====== Message de succès ====== */
+.success-message {
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* ====== Responsive ====== */
+@media screen and (max-width: 768px) {
+  .add-remove-student {
+    padding: 20px;
+  }
+
+  th,
+  td {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  button,
+  select {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+}

@@ -1,0 +1,40 @@
+.co-navigation-page {
+  padding: 20px;
+  background-color: #f4f4f9;
+  height: 100vh;
+}
+
+.co-navigation-page h1 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+}
+
+.co-nav-options {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.co-nav-options button {
+  padding: 12px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.co-nav-options button:hover {
+  background-color: #45a049;
+}
+
+.co-navigation-page p {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+  margin-top: 20px;
+}

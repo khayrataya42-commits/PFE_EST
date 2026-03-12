@@ -1,0 +1,235 @@
+.event-list {
+  margin-top: 1rem;
+  max-height: 180px; /* ou toute autre hauteur souhaitée */
+  overflow-y: auto; /* active le défilement vertical si nécessaire */
+  padding-right: 0.5rem; /* espace pour éviter que le scrollbar chevauche le contenu */
+}
+
+.event-list h3 {
+  margin-bottom: 1rem;
+  color: #34495e;
+}
+
+.event-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.event-list li {
+  background: #f9f9f9;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 0.8rem;
+  padding: 0.6rem 1rem;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  margin-bottom: 0.8rem;
+  padding: 0.6rem 1rem;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  width: 100%; /* prend toute la largeur du conteneur */
+  box-sizing: border-box; /* inclut padding dans la largeur */
+}
+
+/* ----- */
+/* ----------- Wrapper général ----------- */
+.event-wrapper {
+  padding-top: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.event-wrapper h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+/* ----------- Section Enseignant (Liste) ----------- */
+.event-list-1 {
+  height: 140px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #3498db #f0f7ff;
+}
+
+.event-list-1 h3 {
+  color: #34495e;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.event-list-1 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.event-list-1 li {
+  background-color: #f0f7ff;
+  border-left: 5px solid #3498db;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+/* ----------- Section Étudiant (Tableau) ----------- */
+.event-list-2 {
+  height: 300px;
+  overflow: auto;
+  scrollbar-width: thin;
+  /* scrollbar-color: #3498db #f0f7ff; */
+  scrollbar-color: #999 #f0f7ff;
+}
+
+.file-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+  text-align: left;
+}
+
+.file-table th,
+.file-table td {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+}
+
+.file-table th {
+  /* background-color: #3498db;
+  color: #fff; */
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.file-table td {
+  background-color: #fafafa;
+}
+
+.file-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Case vide */
+.file-table td[colspan="5"] {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  background-color: #fafafa;
+}
+
+/* .file-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.file-table tr:hover {
+  background-color: #eef6ff;
+} */
+
+/* ----------- Scroll personnalisé (WebKit) ----------- */
+.event-list-1::-webkit-scrollbar,
+.event-list-2::-webkit-scrollbar {
+  width: 8px;
+}
+
+.event-list-1::-webkit-scrollbar-track,
+.event-list-2::-webkit-scrollbar-track {
+  background: #f0f7ff;
+  border-radius: 4px;
+}
+
+.event-list-1::-webkit-scrollbar-thumb,
+.event-list-2::-webkit-scrollbar-thumb {
+  /* background-color: #3498db; */
+  background-color: #999;
+  border-radius: 4px;
+}
+
+/* ----------- Messages et erreurs ----------- */
+p {
+  text-align: center;
+  color: #7f8c8d;
+}
+
+.error {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* ====== Loading spinner ====== */
+.loading-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  font-size: 15px;
+  color: #2980b9;
+}
+
+.loading-message i {
+  margin-right: 6px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.fa {
+  margin-right: 6px;
+  color: #333;
+}
+
+.event-item {
+  background-color: #f9f9f9;
+  border-left: 4px solid #007bff;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.event-item:hover {
+  background-color: #eef6ff;
+}
+
+.event-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.event-type {
+  color: #6c757d;
+  font-style: italic;
+}
+
+.event-time {
+  color: #444;
+}
+
+.event-location {
+  color: #2e86de;
+}
+
+.event-description {
+  color: #555;
+}
+
+.icon {
+  margin-right: 6px;
+  color: #007bff;
+}
