@@ -1,0 +1,21 @@
+/* ===== Page d'inscription des étudiants ===== */
+.enrollment-page {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.enrollment-page h2 {
+  font-size: 24px;
+
+  color: #2c3e50;
+
+  padding-left: 12px;
+  padding-top: 5px;
+}
+
+/* Composant AddStudentListRemove */
+.enrollment-page > div {
+  overflow-x: auto;
+}

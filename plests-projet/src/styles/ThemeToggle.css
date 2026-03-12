@@ -1,0 +1,44 @@
+.theme-toggle-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 100px;
+  right: 25px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+/* Mode clair */
+.light-mode .theme-toggle-button {
+  background-color: #f0f0f0; /* Fond gris clair */
+  color: #333; /* Icône gris foncé */
+  border: 2px solid #ccc; /* Bordure grise */
+}
+
+/* .light-mode .theme-toggle-button:hover {
+  background-color: #e0e0e0; /* Fond gris plus foncé 
+  border-color: #999; /* Bordure plus foncée 
+} */
+
+/* Mode sombre */
+.dark-mode .theme-toggle-button {
+  background-color: #333; /* Fond gris foncé */
+  color: #f0f0f0; /* Icône blanche */
+  border: 2px solid #666; /* Bordure grise foncée */
+}
+
+/* .dark-mode .theme-toggle-button:hover {
+  background-color: #444; /* Fond encore plus foncé 
+  border-color: #888; /* Bordure plus claire 
+} */
+
+/* Animation pour une transition douce */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

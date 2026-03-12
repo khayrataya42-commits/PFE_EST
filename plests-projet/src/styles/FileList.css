@@ -1,0 +1,153 @@
+.file-list {
+  margin-top: 2rem;
+  max-height: 400px; /* ou toute autre hauteur souhaitée */
+  overflow-y: auto; /* active le défilement vertical si nécessaire */
+  padding-right: 0.5rem; /* espace pour éviter que le scrollbar chevauche le contenu */
+}
+
+.file-list h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.file-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.file-list li {
+  margin-bottom: 0.8rem;
+  padding: 0.6rem 1rem;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  margin-bottom: 0.8rem;
+  padding: 0.6rem 1rem;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  width: 100%; /* prend toute la largeur du conteneur */
+  box-sizing: border-box; /* inclut padding dans la largeur */
+}
+
+.file-list li:hover {
+  background-color: #e2e2e2;
+}
+
+.file-list a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+}
+
+.file-list a:hover {
+  text-decoration: underline;
+}
+
+/*-----------------*/
+/* Style pour le conteneur de la liste de fichiers */
+.file-list {
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour le titre */
+.file-list h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Style pour les messages de chargement et d'erreur */
+.file-list p {
+  font-size: 16px;
+  text-align: center;
+  color: #333;
+}
+
+/* Style pour le message d'erreur */
+.file-list .error {
+  color: #f44336;
+  font-weight: bold;
+}
+
+/* Style pour la liste des fichiers */
+.file-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style pour chaque élément de la liste de fichiers */
+.file-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+/* Effet au survol de chaque élément de la liste */
+.file-list li:hover {
+  background-color: #f1f1f1;
+}
+
+/* Style pour le lien des fichiers */
+.file-list a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+/* Effet au survol du lien */
+.file-list a:hover {
+  color: #f0ad4e;
+}
+
+/* Style pour la date de téléchargement */
+.file-list span {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Style pour le message "Aucun fichier trouvé" */
+.file-list p {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+}
+
+/* ====== Loading spinner ====== */
+p.loading-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  font-size: 15px;
+  color: #2980b9;
+}
+
+.loading-message i {
+  margin-right: 6px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

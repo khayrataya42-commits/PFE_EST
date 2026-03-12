@@ -1,0 +1,197 @@
+/* Général */
+.courses-page {
+  /* max-width: 1000px; */
+  margin: 10px auto;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  /* text-align: center; */
+}
+
+.courses-page h1 {
+  font-size: 26px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.courses-page h2 {
+  font-size: 22px;
+  color: #34495e;
+  margin-bottom: 30px;
+}
+
+/* Section des départements */
+.departments {
+  margin-bottom: 15px;
+}
+
+.departments h3 {
+  font-size: 20px;
+  color: #2d3436;
+  margin-bottom: 15px;
+}
+
+.dept_into {
+  display: flex;
+  overflow-x: auto; /* Active le scroll horizontal */
+  gap: 12px;
+  padding: 10px;
+  scrollbar-width: thin; /* Pour Firefox */
+  scrollbar-color: #dfe6e9 transparent; /* Personnalise scrollbar */
+}
+
+.dept_into::-webkit-scrollbar {
+  height: 8px;
+}
+
+.dept_into::-webkit-scrollbar-thumb {
+  background-color: #b2bec3;
+  border-radius: 4px;
+}
+
+.dept-button {
+  flex-shrink: 0; /* Empêche le bouton de rétrécir */
+  min-width: 140px; /* Assure une taille uniforme */
+  background-color: #0984e3;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap; /* Empêche le texte d'aller à la ligne */
+  max-width: 300px;
+}
+
+.dept-button:hover {
+  background-color: #74b9ff;
+}
+
+.dept-button {
+  background-color: #0984e3;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dept-button:hover {
+  background-color: #74b9ff;
+}
+
+/* Bouton "Afficher la liste des cours" */
+.show-courses-btn {
+  margin-top: 5px;
+  background-color: #00b894;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.show-courses-btn:hover {
+  background-color: #00cec9;
+}
+
+/* Bouton retour */
+.back-btn {
+  display: inline-block;
+  margin: 30px auto;
+  background-color: #636e72;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #b2bec3;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Bouton retour */
+.back-btn {
+  background-color: #f0ad4e;
+  color: white;
+  margin-bottom: 20px;
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin-top: 20px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.back-btn:hover {
+  background-color: #ec971f;
+}
+
+/* Section des départements */
+/* .departments {
+  margin: 20px 0;
+}
+
+.departments h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.dept-button {
+  background-color: #5bc0de;
+  color: white;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.dept-button:hover {
+  background-color: #31b0d5;
+} */
+
+/* Bouton afficher la liste des cours */
+.show-courses-btn {
+  background-color: #5bc0de;
+  color: white;
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+}
+
+.show-courses-btn:hover {
+  background-color: #31b0d5;
+}
+
+/* Composants de gestion des cours (par exemple AddCourses) */
+.add-courses-section {
+  margin-top: 30px;
+}
+
+.add-courses-section h2 {
+  color: #444;
+  font-size: 22px;
+  margin-bottom: 10px;
+}

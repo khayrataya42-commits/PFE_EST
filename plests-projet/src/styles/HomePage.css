@@ -1,0 +1,17 @@
+/* styles/HomePage.css */
+.home-content {
+  width: 100%;
+  height: 100%;
+}
+
+.home-header {
+  font-size: 2rem;
+  color: #003366;
+}
+
+.home-description {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/*------------- -------------*/

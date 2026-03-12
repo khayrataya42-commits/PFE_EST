@@ -1,0 +1,157 @@
+/* styles/LoginPage.css
+
+/* Conteneur principal avec fond personnalisé */
+.login-infer-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  overflow-y: auto;
+  background-color: #f0f0f0;
+  background-image: url("../assets/est_sale_bg.webp.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Conteneur du formulaire */
+.login-container {
+  width: 100%;
+  max-width: 700px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+/* Onglets */
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  margin-top: 5px;
+}
+
+.tab {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #f8f9fa; /* Couleur de fond plus visible pour les onglets inactifs */
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #555; /* Texte plus visible */
+  text-align: center;
+  margin-top: 10px;
+}
+
+.tab:hover {
+  background-color: #e0e0e0; /* Légère surbrillance au survol */
+}
+
+.tab.active {
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Légère ombre pour effet de profondeur */
+}
+
+/* Contenu des onglets */
+.tab-content {
+  margin-top: 15px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.help-text {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Champs de formulaire */
+.login-form input,
+.register-form input {
+  width: 100%;
+  padding: 15px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Boutons */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Lien de retour */
+p a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+/* ------------ ------------ */
+/* Style pour le bouton */
+.tab {
+  position: relative; /* Important pour positionner le tooltip */
+}
+
+/* Le texte tooltip par défaut est caché */
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  top: -30px; /* Ajuste la position selon ton design */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+/* Afficher le texte au survol */
+.tab:hover .tooltip {
+  visibility: visible;
+}
+/* ------------ ------------ */
+.email-message {
+  font-size: 1rem;
+  color: #2ecc71;
+  margin-bottom: 0.5rem;
+}

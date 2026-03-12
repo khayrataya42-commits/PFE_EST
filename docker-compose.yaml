@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  notification_service:
+    build: ./microservices_s/notification_service
+    container_name: notification_service
+    ports:
+      - "8005:8005"
+    depends_on:
+      - rabbitmq
+
+  chatbot_service:
+    build: ./microservices_s/chatBot_service
+    container_name: chatbot_service
+    ports:
+      - "8004:8004"
+    depends_on:
+      - rabbitmq

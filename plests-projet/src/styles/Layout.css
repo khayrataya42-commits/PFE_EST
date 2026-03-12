@@ -1,0 +1,113 @@
+/*----------- ----------*/
+/* ✅ Structure globale */
+.app-layout {
+  background-color: #f4f4f9;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-container {
+  background-color: #003366;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  padding: 20px;
+  width: 100%;
+  height: 70px;
+}
+
+.chat-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* ✅ Menu */
+.menu-container {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* ✅ Contenu principal */
+.page-content {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ RESPONSIVE STYLES */
+
+/* Pour les écrans plus petits, comme les tablettes ou téléphones */
+@media (max-width: 1024px) {
+  .chat-container {
+    flex-direction: column; /* Les éléments du chat se disposeront en colonne */
+    padding: 10px;
+  }
+
+  .menu-container {
+    width: 100%; /* Le menu prendra toute la largeur */
+    padding: 15px; /* Un peu plus d'espace pour les éléments du menu */
+    box-shadow: none; /* Retirer l'ombre sur les petits écrans */
+  }
+
+  .page-content {
+    padding: 10px; /* Réduire l'espace autour du contenu */
+  }
+
+  .header-container {
+    font-size: 1.2rem; /* Réduire la taille du texte sur les petits écrans */
+  }
+}
+
+/* Pour les très petits écrans (smartphones) */
+@media (max-width: 768px) {
+  .chat-container {
+    flex-direction: column; /* Empiler les éléments */
+    gap: 10px;
+  }
+
+  .menu-container {
+    width: 100%;
+    padding: 10px;
+    box-shadow: none; /* Enlever l'ombre pour un design plus épuré */
+  }
+
+  .page-content {
+    padding: 10px;
+  }
+
+  .header-container {
+    font-size: 1.1rem; /* Encore plus petit pour les très petits écrans */
+  }
+}
+
+/* Pour les petits écrans en mode portrait */
+@media (max-width: 480px) {
+  .header-container {
+    font-size: 1rem; /* Taille très réduite pour les très petits écrans */
+  }
+
+  .menu-container {
+    width: 100%; /* Le menu occupe toute la largeur */
+    padding: 8px;
+  }
+
+  .chat-container {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .page-content {
+    padding: 5px;
+  }
+}

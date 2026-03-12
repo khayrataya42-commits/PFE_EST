@@ -1,0 +1,119 @@
+/* styles/Header.css*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+header img {
+  height: 50px;
+  width: 150px;
+}
+
+header .email {
+  flex: 1;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* header .button {
+  background-color: #ffcc00;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+} */
+
+/* header .button:hover {
+  background-color: #ffb300;
+} */
+
+/* Section de l'utilisateur connecté */
+header .user-info {
+  display: flex;
+  align-items: center;
+}
+
+header .profile-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+header .user-details {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+header .user-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+header .user-role {
+  font-size: 14px;
+}
+
+header .header-actions {
+  display: flex;
+  align-items: center;
+}
+
+header .login-section {
+  display: flex;
+  align-items: center;
+}
+
+header .login-section .email {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+/* Styles spécifiques pour les icônes */
+header .header-actions i {
+  font-size: 18px; /* Ajuster la taille des icônes */
+  transition: transform 0.2s;
+}
+
+header .header-actions i:hover {
+  transform: scale(1.2); /* Zoom lors du survol */
+}
+
+.notification-button {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -4px;
+  /* right: -1px; */
+  background: #e74c3c;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+/* ------------ ----------- */
+
+/* Responsivité du header */
+@media (max-width: 768px) {
+  .header-container {
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+}

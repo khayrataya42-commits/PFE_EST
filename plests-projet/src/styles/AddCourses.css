@@ -1,0 +1,160 @@
+/* Général
+.add-course-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.add-course-form h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+/* }
+
+/* Formulaire 
+.add-course-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.add-course-form input,
+.add-course-form select,
+.add-course-form button {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.add-course-form input:focus,
+.add-course-form select:focus {
+  border-color: #5bc0de;
+  outline: none;
+}
+
+/* Messages d'erreur et de succès 
+.error-message,
+.success-message {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+} */
+
+/* Bouton de soumission */
+/* .add-course-form button {
+  background-color: #5bc0de;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-course-form button:hover {
+  background-color: #31b0d5;
+} */
+
+/* ------------- */
+.add-course-form {
+  background-color: #f9f9f9;
+  padding: 5px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 0 auto 10px;
+}
+
+.add-course-form h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #2d3436;
+  text-align: center;
+}
+
+.div-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .div-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+.add-course-form input,
+.add-course-form select {
+  padding: 12px;
+  border: 1px solid #dcdde1;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+.add-course-form input:focus,
+.add-course-form select:focus {
+  border-color: #00b894; /* vert doux */
+  outline: none;
+}
+
+.add-course-form button {
+  margin-top: 24px;
+  padding: 12px;
+  background-color: #00b894; /* vert */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.add-course-form button:hover {
+  background-color: #55efc4;
+}
+
+.success-message,
+.error-message {
+  margin-bottom: 15px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.success-message {
+  background-color: #dff9fb;
+  color: #27ae60;
+  border: 1px solid #55efc4;
+}
+
+.error-message {
+  background-color: #ffe6e6;
+  color: #d63031;
+  border: 1px solid #fab1a0;
+}

@@ -1,0 +1,143 @@
+/* Général pour la liste des cours */
+.course-list {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+}
+
+.course-list h3 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Messages de succès et d'erreur */
+.success,
+.error {
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.success {
+  background-color: #dff9fb;
+  color: #27ae60;
+  border: 1px solid #55efc4;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Tableau des cours */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: left;
+}
+
+table th,
+table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+table th {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+table td {
+  background-color: #fafafa;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Case vide */
+table td[colspan="5"] {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  background-color: #fafafa;
+}
+
+/* Boutons d'action */
+/* button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff3b3b;
+}
+
+button:focus {
+  outline: none;
+} */
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  background-color: #e74c3c; /* Rouge pour la suppression */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button i {
+  margin-right: 8px; /* Espacement entre l'icône et le texte */
+}
+
+button:hover {
+  background-color: #c0392b; /* Couleur plus foncée au survol */
+}
+
+button:focus {
+  outline: none;
+}
+/* ------- */
+/* ====== Loading spinner ====== */
+tr td.loading-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  font-size: 15px;
+  color: #2980b9;
+}
+
+.loading-message i {
+  margin-right: 6px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
